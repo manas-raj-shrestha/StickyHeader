@@ -64,7 +64,7 @@ public class StickyHeaderLayoutManager extends LinearLayoutManager {
 
     @Override
     public int scrollVerticallyBy(int dy, RecyclerView.Recycler recycler, RecyclerView.State state) {
-        if (headerPositions.contains(findFirstCompletelyVisibleItemPosition()) && findFirstCompletelyVisibleItemPosition() != FIRST_ITEM) {
+        if (headerPositions.contains(findFirstCompletelyVisibleItemPosition())) {
             int translationY = -(headerView.getBottom() - getVisibleHeaders().get(findFirstCompletelyVisibleItemPosition()).getTop());
             headerView.setTranslationY(translationY);
 
