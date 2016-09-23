@@ -1,4 +1,4 @@
-package com.droid.manasshrestha.stickyheaders.itemmodels;
+package com.leapfrog.lftechnology.stickyheaders.itemmodels;
 
 public class Item {
     public String itemName;

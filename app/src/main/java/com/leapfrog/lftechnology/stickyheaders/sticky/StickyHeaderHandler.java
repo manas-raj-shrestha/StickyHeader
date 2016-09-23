@@ -1,4 +1,4 @@
-package com.droid.manasshrestha.stickyheaders.sticky;
+package com.leapfrog.lftechnology.stickyheaders.sticky;
 
 import android.support.v7.widget.RecyclerView;
 

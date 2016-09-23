@@ -1,6 +1,6 @@
-package com.droid.manasshrestha.stickyheaders.itemmodels;
+package com.leapfrog.lftechnology.stickyheaders.itemmodels;
 
-import com.droid.manasshrestha.stickyheaders.sticky.StickyHeader;
+import com.leapfrog.lftechnology.stickyheaders.sticky.StickyHeader;
 
 public class HeaderItem extends Item implements StickyHeader {
 

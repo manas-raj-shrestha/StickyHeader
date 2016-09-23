@@ -1,4 +1,4 @@
-package com.droid.manasshrestha.stickyheaders;
+package com.leapfrog.lftechnology.stickyheaders;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -8,9 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.droid.manasshrestha.stickyheaders.itemmodels.Item;
-import com.droid.manasshrestha.stickyheaders.sticky.StickyHeader;
-import com.droid.manasshrestha.stickyheaders.sticky.StickyHeaderHandler;
+import com.droid.manasshrestha.stickyheaders.R;
+import com.leapfrog.lftechnology.stickyheaders.itemmodels.Item;
+import com.leapfrog.lftechnology.stickyheaders.sticky.StickyHeader;
+import com.leapfrog.lftechnology.stickyheaders.sticky.StickyHeaderHandler;
 
 import java.util.ArrayList;
 import java.util.List;

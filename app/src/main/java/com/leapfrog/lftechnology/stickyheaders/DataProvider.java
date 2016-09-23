@@ -1,7 +1,7 @@
-package com.droid.manasshrestha.stickyheaders;
+package com.leapfrog.lftechnology.stickyheaders;
 
-import com.droid.manasshrestha.stickyheaders.itemmodels.HeaderItem;
-import com.droid.manasshrestha.stickyheaders.itemmodels.Item;
+import com.leapfrog.lftechnology.stickyheaders.itemmodels.HeaderItem;
+import com.leapfrog.lftechnology.stickyheaders.itemmodels.Item;
 
 import java.util.ArrayList;
 

@@ -1,13 +1,13 @@
-package com.droid.manasshrestha.stickyheaders.sticky;
+package com.leapfrog.lftechnology.stickyheaders.sticky;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
-public interface ViewRetriever {
+public interface ViewHolderRetriever {
 
     RecyclerView.ViewHolder getViewHolderForPosition(int headerPositionToShow);
 
-     class RecyclerViewRetriever implements ViewRetriever {
+     class RecyclerViewRetriever implements ViewHolderRetriever {
 
         private final RecyclerView recyclerView;
 

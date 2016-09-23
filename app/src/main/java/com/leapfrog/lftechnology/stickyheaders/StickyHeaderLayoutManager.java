@@ -1,4 +1,4 @@
-package com.droid.manasshrestha.stickyheaders;
+package com.leapfrog.lftechnology.stickyheaders;
 
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.droid.manasshrestha.stickyheaders.sticky.ViewRetriever;
+import com.leapfrog.lftechnology.stickyheaders.sticky.ViewHolderRetriever;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -22,7 +22,7 @@ public class StickyHeaderLayoutManager extends LinearLayoutManager {
     private ViewGroup viewGroup;
     private View headerView;
     private RecyclerView recyclerView;
-    private ViewRetriever.RecyclerViewRetriever viewRetriever;
+    private ViewHolderRetriever.RecyclerViewRetriever viewRetriever;
 
     private Map<Integer, View> allHeaders = new LinkedHashMap<>();
     private ArrayList<Integer> headerPositions = new ArrayList<>();
@@ -55,7 +55,7 @@ public class StickyHeaderLayoutManager extends LinearLayoutManager {
         viewGroup = (ViewGroup) view.getParent();
         recyclerView = view;
 
-        viewRetriever = new ViewRetriever.RecyclerViewRetriever(recyclerView);
+        viewRetriever = new ViewHolderRetriever.RecyclerViewRetriever(recyclerView);
         headerView = getItemView(FIRST_ITEM);
 
         viewGroup.addView(headerView);

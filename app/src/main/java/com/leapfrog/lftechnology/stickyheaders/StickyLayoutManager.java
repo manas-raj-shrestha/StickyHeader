@@ -1,4 +1,4 @@
-package com.droid.manasshrestha.stickyheaders;
+package com.leapfrog.lftechnology.stickyheaders;
 
 import android.content.Context;
 import android.os.Build;
@@ -11,9 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 
-import com.droid.manasshrestha.stickyheaders.sticky.StickyHeader;
-import com.droid.manasshrestha.stickyheaders.sticky.StickyHeaderHandler;
-import com.droid.manasshrestha.stickyheaders.sticky.ViewRetriever;
+import com.droid.manasshrestha.stickyheaders.R;
+import com.leapfrog.lftechnology.stickyheaders.sticky.StickyHeader;
+import com.leapfrog.lftechnology.stickyheaders.sticky.StickyHeaderHandler;
+import com.leapfrog.lftechnology.stickyheaders.sticky.ViewHolderRetriever;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -38,7 +39,7 @@ public class StickyLayoutManager extends LinearLayoutManager {
     private RecyclerView.ViewHolder currentViewHolder;
     private StickyHeaderHandler stickyHeaderHandler;
     private RecyclerView recyclerView;
-    private ViewRetriever.RecyclerViewRetriever viewRetriever;
+    private ViewHolderRetriever.RecyclerViewRetriever viewRetriever;
 
     public StickyLayoutManager(Context context, StickyHeaderHandler stickyHeaderHandler) {
         this(context, VERTICAL, false, stickyHeaderHandler);
@@ -62,7 +63,7 @@ public class StickyLayoutManager extends LinearLayoutManager {
     }
 
     void updateHeaderState(int firstVisiblePosition, Map<Integer, View> visibleHeaders,
-                           ViewRetriever viewRetriever) {
+                           ViewHolderRetriever viewRetriever) {
         int headerPositionToShow = getHeaderPositionToShow(
                 firstVisiblePosition, visibleHeaders.get(firstVisiblePosition));
         View headerToCopy = visibleHeaders.get(headerPositionToShow);
@@ -112,7 +113,7 @@ public class StickyLayoutManager extends LinearLayoutManager {
         Log.e(TAG, "onAttachedToWindow");
 
         this.recyclerView = view;
-        viewRetriever = new ViewRetriever.RecyclerViewRetriever(recyclerView);
+        viewRetriever = new ViewHolderRetriever.RecyclerViewRetriever(recyclerView);
         setElevateHeaders(headerElevation);
     }
 

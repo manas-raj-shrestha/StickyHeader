@@ -1,4 +1,4 @@
-package com.droid.manasshrestha.stickyheaders;
+package com.leapfrog.lftechnology.stickyheaders;
 
 import android.content.Context;
 
