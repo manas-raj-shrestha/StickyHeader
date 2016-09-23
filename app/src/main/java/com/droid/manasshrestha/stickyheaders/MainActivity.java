@@ -16,6 +16,6 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         ItemListAdapter itemListAdapter = new ItemListAdapter(this, DataProvider.getInstance().getDataList());
         recyclerView.setAdapter(itemListAdapter);
-        recyclerView.setLayoutManager(new TssdkStickyLayoutManager(this, itemListAdapter));
+        recyclerView.setLayoutManager(new StickyHeaderLayoutManager(this));
     }
 }
