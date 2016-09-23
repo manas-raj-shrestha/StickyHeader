@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 
-import com.droid.manasshrestha.stickyheaders.R;
 import com.leapfrog.lftechnology.stickyheaders.sticky.StickyHeader;
 import com.leapfrog.lftechnology.stickyheaders.sticky.StickyHeaderHandler;
 import com.leapfrog.lftechnology.stickyheaders.sticky.ViewHolderRetriever;

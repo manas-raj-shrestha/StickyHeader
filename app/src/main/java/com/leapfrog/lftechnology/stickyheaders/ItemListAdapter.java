@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.droid.manasshrestha.stickyheaders.R;
 import com.leapfrog.lftechnology.stickyheaders.itemmodels.Item;
 import com.leapfrog.lftechnology.stickyheaders.sticky.StickyHeader;
 import com.leapfrog.lftechnology.stickyheaders.sticky.StickyHeaderHandler;
